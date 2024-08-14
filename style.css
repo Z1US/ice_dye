@@ -1,0 +1,355 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url(srs/275.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  border-radius: 0px 0px 20px 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  background: black;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.navbar__logo {
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  font-weight: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  font-size: 20px;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.signup__button {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: rgb(145, 4, 145);
+  color: white;
+}
+
+.signup__button:hover {
+  background: rgb(18, 121, 18);
+  transition: all 0.3s ease;
+}
+
+.center-column {
+  backdrop-filter: blur(
+    px
+  ); /* Blur effect for the background behind the container */
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.hero-section {
+  filter: drop-shadow(0 0 0.75rem rgb(208, 22, 255));
+  position: relative;
+  text-align: center; /* Center text horizontally */
+  color: white; /* Set text color to white */
+}
+
+.header-greeting {
+  font-weight: 400;
+  position: absolute;
+  top: 50%; /* Position the text in the middle */
+  left: 50%; /* Center text horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  padding: 20px;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Add a semi-transparent background to make text stand out */
+  border-radius: 10px; /* Optional: Round the corners of the background */
+  width: 80%; /* Optional: Constrain the text width */
+}
+
+.hero-img {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 20px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+u {
+  color: blueviolet;
+  font-weight: 350;
+}
+
+.article-paragraph1 {
+  filter: drop-shadow(16px 16px 20px rgb(153, 0, 255)) invert(0%);
+  margin-top: 30px;
+  padding: 50px 20px;
+  width: 50%;
+  font-size: 30px;
+  color: white;
+}
+
+.article-paragraph2 {
+  font-weight: 350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 50px;
+  color: white;
+}
+.shape1,
+.shape2,
+.shape3,
+.shape4,
+.shape5,
+.shape6 {
+  position: absolute;
+  filter: blur(5rem);
+}
+
+.shape1 {
+  position: absolute;
+  top: 42%;
+  left: 70%;
+  width: 25rem;
+  height: 25rem;
+  background: rgb(150, 22, 224);
+  border-radius: 24% 76% 77% 23% / 30% 30% 70% 70%;
+  filter: blur(6rem);
+  animation: shape1 20s infinite;
+}
+
+@keyframes shape1 {
+  0% {
+    transform: translate(0, 0);
+    border-radius: 24% 76% 77% 23% / 30% 30% 70% 70%;
+  }
+  25% {
+    transform: translate(-55%, -10%);
+    border-radius: 28% 72% 81% 19% / 78% 25% 75% 22%;
+    height: 50rem;
+    width: 80rem;
+  }
+  50% {
+    transform: translate(-90%, -10%);
+    border-radius: 60% 40% 0% 100% / 1% 74% 26% 99%;
+  }
+  75% {
+    transform: translate(-30%, -10%);
+    border-radius: 0% 100% 100% 0% / 0% 100% 100% 0%;
+    height: 30rem;
+    width: 45rem;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    border-radius: 24% 76% 77% 23% / 30% 30% 70% 70%;
+  }
+}
+
+.shape2 {
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  width: 35rem;
+  height: 25rem;
+  background: rgb(214, 131, 231);
+  border-radius: 73% 27% 77% 23% / 53% 4% 96% 47%;
+  filter: blur(12rem);
+  animation: shape2 35s infinite;
+}
+
+@keyframes shape2 {
+  0% {
+    transform: translate(0, 0);
+    border-radius: 73% 27% 77% 23% / 53% 4% 96% 47%;
+  }
+  25% {
+    transform: translate(-55%, -55%);
+    border-radius: 28% 72% 81% 19% / 78% 25% 75% 22%;
+    height: 50rem;
+    width: 50rem;
+  }
+  50% {
+    transform: translate(-70%, -70%);
+    border-radius: 60% 40% 0% 100% / 1% 74% 26% 99%;
+  }
+  75% {
+    transform: translate(-30%, -30%);
+    border-radius: 0% 100% 100% 0% / 0% 100% 100% 0%;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    border-radius: 73% 27% 77% 23% / 53% 4% 96% 47%;
+  }
+}
+
+.shape3 {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  width: 25rem;
+  height: 25rem;
+  background: rgb(128, 196, 219);
+  border-radius: 70% 30% 80% 20% / 42% 25% 75% 58%;
+  filter: blur(14rem);
+  animation: shape3 35s infinite;
+}
+
+@keyframes shape3 {
+  0% {
+    transform: translate(0, 0);
+    border-radius: 70% 30% 80% 20% / 42% 25% 75% 58%;
+  }
+  25% {
+    transform: translate(-125%, -25%);
+    border-radius: 28% 72% 81% 19% / 78% 25% 75% 22%;
+    height: 50rem;
+    width: 50rem;
+  }
+  50% {
+    transform: translate(-90%, -35%);
+    border-radius: 60% 40% 0% 100% / 1% 74% 26% 99%;
+  }
+  75% {
+    transform: translate(-30%, -40%);
+    border-radius: 0% 100% 100% 0% / 0% 100% 100% 0%;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    border-radius: 70% 30% 80% 20% / 42% 25% 75% 58%;
+  }
+}
+
+.shape4 {
+  position: absolute;
+  top: 42%;
+  left: 70%;
+  width: 25rem;
+  height: 25rem;
+  background: rgb(169, 82, 177);
+  border-radius: 24% 76% 77% 23% / 30% 30% 70% 70%;
+  filter: blur(5rem);
+  // animation: shape1 20s infinite;
+}
+
+.shape5 {
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  width: 35rem;
+  height: 25rem;
+  background: rgb(200, 108, 223);
+  border-radius: 73% 27% 77% 23% / 53% 4% 96% 47%;
+  filter: blur(5rem);
+  // animation: shape2 15s infinite;
+}
+
+.shape6 {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  width: 25rem;
+  height: 25rem;
+  background: rgb(189, 97, 243);
+  border-radius: 70% 30% 80% 20% / 42% 25% 75% 58%;
+  filter: blur(5rem);
+  // animation: shape3 30s infinite;
+}
