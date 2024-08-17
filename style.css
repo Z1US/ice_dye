@@ -47,7 +47,7 @@ html {
   justify-content: center;
   background: black;
   align-items: center;
-  position: sticky;
+
   top: 0;
   z-index: 2;
 }
@@ -128,7 +128,9 @@ html {
 }
 
 .center-column {
+  display: flex;
   width: 100%;
+  height: 100%;
 
   backdrop-filter: blur(
     20px
@@ -263,7 +265,6 @@ footer {
 }
 
 .search-wrapper {
-  padding: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -273,7 +274,7 @@ footer {
 .search-box {
   border-radius: 10px;
   height: 50px;
-  margin: 10px;
+
   background-color: purple;
   display: flex;
 }
@@ -294,7 +295,7 @@ input {
 
 .gallery-header {
   color: white;
-  padding: 10px;
+  padding: 10px 0px;
   font-weight: 700;
 }
 
@@ -306,6 +307,47 @@ footer > div {
   padding: 20px;
 }
 
+.gallery-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: black;
+
+  background: rgba(188, 191, 196, 0.45);
+  border-radius: 20px;
+  flex: 1 1 calc(50% - 20px);
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20px;
+  padding: 5px 8px 20px 8px;
+}
+
+.gallery-post > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px 20px 0px 20px;
+}
+
+.gallery-post p {
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.all-gallery-posts {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-post h3 {
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 20px;
+}
 .shape1,
 .shape2,
 .shape3,
