@@ -10,14 +10,14 @@
 }
 
 body {
-  background: url(srs/275.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+
   position: relative;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 .animation-container {
@@ -37,6 +37,7 @@ body {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .navbar {
@@ -87,6 +88,7 @@ body {
 }
 
 .navbar__links {
+  font-weight: 350;
   font-size: 20px;
   align-items: center;
   color: white;
@@ -105,6 +107,7 @@ body {
 }
 
 .signup__button {
+  font-weight: 400;
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -125,9 +128,13 @@ body {
 }
 
 .center-column {
+  width: 100%;
+
   backdrop-filter: blur(
-    px
+    20px
   ); /* Blur effect for the background behind the container */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -195,6 +202,110 @@ u {
   font-size: 50px;
   color: white;
 }
+
+.purple-geode {
+  align-items: baseline;
+  display: flex;
+  width: 100%;
+}
+
+.purple-geode img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.description-purple-geode {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.green-geode {
+  display: flex;
+  width: 100%;
+}
+
+.green-geode img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.description-green-geode {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  width: 50%;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  filter: drop-shadow(0 0 0.75rem rgb(208, 22, 255));
+  padding: 20px 0;
+}
+
+.footer-list > * {
+  align-items: center;
+  padding: 4px 0px;
+  font-weight: 300;
+}
+
+.gallery-searchbar {
+  filter: drop-shadow(0 0 0.75rem rgb(208, 22, 255));
+  position: relative;
+  text-align: center; /* Center text horizontally */
+  color: white; /* Set text color to white */
+}
+
+.search-wrapper {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-box {
+  border-radius: 10px;
+  height: 50px;
+  margin: 10px;
+  background-color: purple;
+  display: flex;
+}
+
+input {
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.search-box > *:nth-child(1) {
+  flex: 1 1 70%;
+}
+
+.search-box > *:nth-child(2) {
+  flex: 1 1 30%;
+}
+
+.gallery-header {
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.search-box > i {
+  align-self: center;
+}
+
+footer > div {
+  padding: 20px;
+}
+
 .shape1,
 .shape2,
 .shape3,
