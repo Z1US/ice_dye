@@ -348,6 +348,117 @@ footer > div {
   font-weight: 500;
   font-size: 20px;
 }
+
+.body-signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sign-up-header {
+  margin-top: 5px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  width: auto + 50px;
+  filter: drop-shadow(0 0 0.75rem rgb(208, 22, 255));
+
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.signup-box {
+  border-radius: 20px;
+  color: white;
+  filter: drop-shadow(0 0 0.75rem rgb(208, 22, 255));
+
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.signup-box > h3 {
+  padding: 20px 30px;
+  margin: auto 20px;
+}
+.signup-box > :nth-child(1) {
+  padding-top: 0px;
+}
+
+.signup-box > input {
+  padding: 5px 20px;
+  margin: auto 20px;
+  font-size: 20px;
+}
+.signup-box > h3 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.signup-box > input {
+  width: 600px;
+}
+
+.privacy-cookie {
+  padding: 10px 10px;
+  align-self: center;
+}
+
+.sign-up-button {
+  border-radius: 5px;
+  padding: 10px 200px;
+  background-color: rgb(208, 22, 255);
+
+  align-self: center;
+}
+
+.or {
+  margin: 20px 90px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hr-signup-left {
+  margin-right: 20px;
+  padding-left: 20px;
+
+  flex: 1;
+}
+
+.hr-signup-right {
+  margin-left: 20px;
+
+  padding: 0 10px;
+
+  flex: 1;
+}
+
+.sign-up-button-google {
+  height: 38.4px;
+  width: 463.15px;
+  border-radius: 5px;
+  padding: 10px 100px;
+
+  align-self: center;
+  align-items: center;
+
+  background-color: rgb(112, 11, 138);
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-button-google > img {
+  height: 23px;
+  width: auto;
+}
+.sign-up-button-google > p {
+  padding-left: 20px;
+}
 .shape1,
 .shape2,
 .shape3,
