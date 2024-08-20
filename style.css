@@ -377,14 +377,15 @@ footer > div {
   background-color: black;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+
   padding: 20px;
 }
 
-.signup-box > h3 {
+.h3-sign-up {
   padding: 20px 30px;
   margin: auto 20px;
 }
+
 .signup-box > :nth-child(1) {
   padding-top: 0px;
 }
@@ -403,9 +404,17 @@ footer > div {
   width: 600px;
 }
 
-.privacy-cookie {
-  padding: 10px 10px;
+.privacy-cookie-1 {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 5px 10px;
   align-self: center;
+}
+.privacy-cookie-2 {
+  font-size: 15px;
+  padding: 5px 10px;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .sign-up-button {
@@ -459,6 +468,41 @@ footer > div {
 .sign-up-button-google > p {
   padding-left: 20px;
 }
+
+.center-column-tutorial {
+  display: flex;
+  flex-direction: column;
+}
+.div-tutorial-post {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column; /* Ensure that h3 and iframe are stacked vertically */
+  align-items: center; /* Center-align items horizontally */
+  height: 400px; /* Set a fixed height for consistency */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box;
+}
+
+.h3-tutorial {
+  font-weight: 500;
+  padding: 20px;
+  align-self: center; /* Center-align h3 element */
+  text-align: center; /* Ensure text is centered */
+  height: 50px; /* Set a fixed height for all h3 elements */
+  margin-bottom: 20px; /* Add margin below to separate it from the iframe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border-radius: 20px;
+  align-self: center;
+  width: 100%; /* Ensure the iframe takes full width */
+  height: 100%; /* Ensure iframe takes the remaining height */
+  flex-grow: 1; /* Allow the iframe to take up remaining space */
+}
+
 .shape1,
 .shape2,
 .shape3,
